@@ -21,15 +21,27 @@ AngshuCap is a packet capture tool that allows you to monitor network traffic an
 ```bash
 git clone https://github.com/<your_username>/angshucap.git
 cd angshucap
+```
 
+2. Install the required dependencies:
+
+```bash
 pip install scapy
+```
 
+3. Run the tool with administrative privileges:
+
+```bash
 sudo python angshucap.py
+```
 
-1. Enter the interface name when prompted (e.g., eth0, wlan0).
-2. Start capturing packets. Press Ctrl+C to stop the capture.
+4. Enter the interface name when prompted (e.g., eth0, wlan0).
 
-Example Output
+5. Start capturing packets. Press Ctrl+C to stop the capture.
+
+## Example Output
+
+```
 +------------+-----------------+---------------+------------------+--------------------+-------------+---------------+
 |   Protocol | Source IP       |   Source Port | Destination IP   |   Destination Port | TCP Flags   | TLS Version   |
 +============+=================+===============+==================+====================+=============+===============+
@@ -39,13 +51,13 @@ Example Output
 +------------+-----------------+---------------+------------------+--------------------+-------------+---------------+
 ...
 
-
-Contribution
+## Contribution
 
 Contributions to AngshuCap are welcome! Feel free to open issues, suggest improvements, or submit pull requests.
 
-License
+## License
 
 This project is licensed under the MIT License.
 
 Replace `<your_username>` with your actual GitHub username, and feel free to modify the content as needed. This README provides an overview of the tool, its features, how to use it, and the license information. Add more details if necessary or include information about how to set up and run the tool on different systems.
+```
